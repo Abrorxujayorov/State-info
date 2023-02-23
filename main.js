@@ -3,7 +3,6 @@
 let constrol = document.querySelector('.control')
 let loader = document.querySelector('.loader')
 let map = document.getElementById('map')
-loader.classList.add('watch')
 window.addEventListener('DOMContentLoaded', function() {
 let api = 'https://restcountries.com/v3.1/all'
     fetch(api)
@@ -33,6 +32,5 @@ let api = 'https://restcountries.com/v3.1/all'
             `
         }
     }
-    loader.classList.remove('watch')
 })
 state()
